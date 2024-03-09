@@ -1,0 +1,82 @@
+/* Header.css */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 0; /* No padding to match the design more closely */
+}
+
+/* Assuming the logo will be an image */
+nav .logo img {
+  /* Set the width and height to match the design */
+  width: auto; /* Use auto to maintain aspect ratio */
+  height: 80px; /* Adjust based on your actual logo size */
+}
+
+/* Styling for the navigation links */
+nav .menu-links {
+  display: flex;
+  /* Remove the gap to manually set the margin */
+}
+
+nav .menu-links a {
+  text-decoration: none;
+  font-size: 2em; /* Adjust size to match the design */
+  color: #eb4749;
+  transition: color 0.3s ease;
+  /* Manually set margin to control spacing */
+  margin-right: 2em; /* Adjust as needed */
+}
+
+/* Adding a margin to the left of the ORDER link to match the spacing in the design */
+nav .menu-links a:nth-child(2) {
+  margin-left: 2em; /* Adjust as needed */
+}
+
+nav .menu-links a:hover {
+  color: #c00;
+}
+
+/* Container for search and cart icons */
+nav .cart {
+  display: flex;
+  align-items: center;
+  /* Set positions relative to each other */
+  position: relative;
+}
+
+/* Search button */
+nav .search-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 1em; /* Adjust as needed */
+}
+
+/* Cart button, assuming you want to show this as an icon */
+nav .cart-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 1em; /* Adjust as needed */
+}
+
+/* The cart counter badge */
+nav .cart-counter {
+  /* Match the design's position */
+  position: absolute;
+  top: -8px; /* Adjust to match the design */
+  right: -8px; /* Adjust to match the design */
+  width: 54px; /* Match the design's size */
+  height: 54px; /* Should be the same as width for a circle */
+  border-radius: 50%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5em; /* Scale down the font size to fit within the circle */
+  font-weight: 400;
+  color: #000;
+  background-color: #fff; /* If there's a background color */
+}

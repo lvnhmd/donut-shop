@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+/* Add this to App.css or Header.css
+header {
+  width: 1919.8px;
+  height: 220.2px;
+  flex-grow: 0;
+  margin: 0 0 45.2px 0.2px;
+  padding: 0.4px 0.3px 0.5px 0.5px;
+  background-color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav .logo {
+  font-size: 24px;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav .menu-links a {
+  width: 134px;
+  height: 74.1px;
+  flex-grow: 0;
+  margin: 51.2px 113.9px 5.4px 113.1px;
+  -webkit-text-stroke: 1px #000;
+  font-family: StribeBasic;
+  font-size: 73.3px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #eb4749;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav .cart {
+  width: 126px;
+  height: 74.1px;
+  flex-grow: 0;
+  margin: 52.2px 20.8px 4.4px 44.7px;
+  font-family: StribeBasic;
+  font-size: 73.3px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
 }
 
-.App-link {
-  color: #61dafb;
+nav .search-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav .cart-btn {
+  width: 126px;
+  height: 74.1px;
+  flex-grow: 0;
+  margin: 52.2px 20.8px 4.4px 44.7px;
+  font-family: StribeBasic;
+  font-size: 73.3px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
 }
+
+nav .cart-counter {
+  width: 104.2px;
+  height: 104.3px;
+  flex-grow: 0;
+  margin: 27.1px 0 0.4px 20.8px;
+  padding: 24.1px 36.3px 6.1px 36.9px;
+  border: solid 1px #000;
+} */
