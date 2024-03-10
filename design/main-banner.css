@@ -1,0 +1,15 @@
+#main-banner {
+    height: 680px;
+    background-image: url('../public/images/main-banner.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* TODO: overlay-img is not responsive */
+#overlay-img {
+    position: absolute;
+    bottom: -14%; 
+    left: 73%; 
+    transform: translateX(-50%); 
+    z-index: 1; 
+}
