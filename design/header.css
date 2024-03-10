@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'Stribe Basic';
+    src: url('../public/webfontkit/stribe-basic-webfont.woff2') format('woff2'),
+        url('../public/webfontkit/stribe-basic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Your Font', sans-serif;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 0, 0, 0.2) 1px, transparent 1px), linear-gradient(rgba(255, 0, 0, 0.2) 1px, transparent 1px);
+    background-size: 192px 192px;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    /* background-color: #F7F7F7; */
+    padding: 10px 20px;
+}
+
+#logo {
+    flex: 0 1 auto;
+    margin-right: 120px;
+}
+
+#logo img {
+    width: 600px;
+    height: auto;
+}
+
+#nav-menu-container {
+    flex: 0 1 auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#nav-menu {
+    list-style-type: none;
+    display: flex;
+    gap: 80px;
+}
+
+#nav-menu li a {
+    color: #EB4749;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font: normal 400 73.29px/normal "Stribe Basic";
+}
+
+.nav-actions {
+    flex: 0 1 auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: auto;
+    margin-right: 80px;
+}
+
+#nav-search {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    margin-left: auto;
+    outline: none;
+}
+
+#nav-search img {
+    fill: currentColor;
+    width: 60px;
+    height: 60px;
+}
+
+#nav-search:hover,
+#nav-search:focus {
+    background-color: #f0f0f0;
+    outline: none;
+}
+
+#nav-search:focus {
+    box-shadow: 0 0 0 2px #0078d7;
+}
+
+#nav-cart {
+    position: relative;
+    display: inline-block;
+    font: normal 400 73.29px/1 "Stribe Basic";
+    padding-right: 40px;
+    margin-left: auto;
+}
+
+#nav-cart a {
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#nav-cart::after {
+    content: '0';
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(0%, -50%);
+    border: 2px solid black;
+    width: 73.29px;
+    height: 73.29px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 63.29px;
+}
+
+#nav-search,
+#nav-cart {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo, #nav-menu-container, .nav-actions {
+        flex: 0 0 auto;
+        justify-content: center;
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    #logo {
+        margin-bottom: 20px;
+    }
+
+    #logo img {
+        width: auto;
+        max-width: 80%;
+        height: auto;
+    }
+
+    #nav-menu-container {
+        border: none;
+    }
+
+    #nav-menu {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-actions {
+        flex-direction: row;
+        margin-top: 20px;
+        justify-content: center;
+        width: auto;
+        gap: 10px;
+    }
+
+    #nav-search img, #nav-cart::after {
+        width: 40px;
+        height: 40px;
+    }
+
+    #nav-cart::after {
+        font-size: 30px;
+        width: 50px;
+        height: 50px;
+    }
+}
